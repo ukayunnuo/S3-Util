@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: s3-util
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+logging:
+  config: classpath:logback-spring.xml
+
+
+# minio配置
+minio:
+  endpoint: http://localhost:9000 #默认端口9000
+  access-key: minioadmin #默认用户名
+  secret-key: minioadmin #默认密码
+  bucket-name: backFileName #桶名
+  cdn-prefix: cdn前缀
+
