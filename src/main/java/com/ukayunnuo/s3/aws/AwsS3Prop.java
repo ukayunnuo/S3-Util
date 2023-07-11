@@ -1,4 +1,4 @@
-package com.ukayunnuo.s3.minio;
+package com.ukayunnuo.s3.aws;
 
 import cn.hutool.json.JSONUtil;
 import lombok.Data;
@@ -14,30 +14,28 @@ import org.springframework.stereotype.Component;
  */
 @Data
 @Component
-@ConfigurationProperties(prefix = "minio")
-public class MinioProp {
+@ConfigurationProperties(prefix = "aws")
+public class AwsS3Prop {
 
     /**
-     连接地址
+     * s3秘密访问密钥
      */
-    private String endpoint;
+    private String secretAccessKey;
+
     /**
-     * 用户名
+     * s3访问密钥id
      */
-    private String accesskey;
+    private String accessKeyId;
+
     /**
-     * 密码
-     */
-    private String secretkey;
-    /**
-     * 桶名
+     * s3 bucket
      */
     private String bucketName;
 
     /**
-     * cdn前缀
+     * 地区
      */
-    private String cdnPrefix;
+    private String regions;
 
     @Override
     public String toString() {

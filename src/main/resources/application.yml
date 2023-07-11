@@ -20,3 +20,20 @@ minio:
   bucket-name: backFileName #桶名
   cdn-prefix: cdn前缀
 
+# aws S3配置
+aws:
+  secret-access-key: s3秘密访问密钥
+  access-key-id: s3访问密钥id
+  bucket-name: 桶名
+  regions: 地区
+  cdn-prefix: cdn前缀
+
+# oracle oci S3配置
+oci:
+  secret-access-key: s3秘密访问密钥
+  access-key-id: s3访问密钥id
+  bucket-name: 桶名
+  regions: 地区
+  cdn-prefix: cdn前缀
+  namespace: namespace
+  configFilePath: 配置文件位置
