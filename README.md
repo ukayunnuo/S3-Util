@@ -17,28 +17,31 @@
 > oracle平台是不支持跨域问题的,如果需要在Oracle平台支持跨域问题需要用Oracle平台原生的功能进行上传, `OciS3Utils`已支持跨域问题
 
 ## Oracle Object Storage S3
+
 ### OciS3Utils oci Object Storage 版本工具类
 
 支持功能：预签名上传文件, 上传文件, 删除文件, 克隆文件等功能
 
->注意：使用该工具类进行操作Oracle平台的对象,进行连接是需要配置文件的
-> 
+> 注意：使用该工具类进行操作Oracle平台的对象,进行连接是需要配置文件的
+>
 > 参考文档：https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/javasdkgettingstarted.htm
 
 ## Minio
 
 ### MinioUtils minio工具类
-支持功能： Minio连接, Bucket创建、删除、查看信息; 文件上传、复制、删除 展示文件列表等功能 
+
+支持功能： Minio连接, Bucket创建、删除、查看信息; 文件上传、复制、删除 展示文件列表等功能
 
 ## 配置说明
 
 找到`src/main/resources/application.yml`,更改以下配置后, 启动`src/main/java/com/ukayunnuo/S3App.java` 启动类文件
+
 ```yaml
 
 # 项目启动端口
 server:
   port: 8080
-  
+
 # minio配置
 minio:
   endpoint: http://localhost:9000 #默认端口9000
