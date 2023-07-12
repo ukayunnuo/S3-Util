@@ -72,12 +72,17 @@
             <version>${aws-s3.version}</version>
         </dependency>
 
-        <!-- oci-java-sdk-bom -->
+        <!-- oci-java-sdk-S3 -->
         <dependency>
             <groupId>com.oracle.oci.sdk</groupId>
             <artifactId>oci-java-sdk-bom</artifactId>
             <version>${oci-s3.version}</version>
             <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>com.oracle.oci.sdk</groupId>
+            <artifactId>oci-java-sdk-objectstorage</artifactId>
+            <version>${oci-s3.version}</version>
         </dependency>
 
         <!-- junit -->
