@@ -2,6 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.12.RELEASE</version>
+        <relativePath/>
+    </parent>
 
     <groupId>com.ukayunnuo</groupId>
     <artifactId>S3-Util</artifactId>
@@ -13,7 +19,6 @@
         <java.version>1.8</java.version>
         <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
         <lombok.version>1.18.28</lombok.version>
-        <slf4j.version>2.0.7</slf4j.version>
         <hutool.version>5.8.20</hutool.version>
         <minio.version>8.5.4</minio.version>
         <aws-s3.version>1.12.504</aws-s3.version>
@@ -27,15 +32,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>${spring-boot.version}</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-            <version>${spring-boot.version}</version>
-        </dependency>
-
 
         <!-- lombok -->
         <dependency>
